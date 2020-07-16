@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 12
+jobs:
+  dev_mode:
+    - env: NODE_ENV=development
+  prod_mode:
+    - env: NODE_ENV=production
+install:
+  - npm install
+script:
+  - npm test
